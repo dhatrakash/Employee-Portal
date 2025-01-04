@@ -1,0 +1,111 @@
+/* LoginPage.css */
+
+/* General container styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Card styling */
+  .login-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Header section with gradient background */
+  .login-header {
+    background: linear-gradient(to right, #ff9800, #fb8c00);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .login-header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .login-header p {
+    color: #ffe0b2;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  /* Form section */
+  .login-form {
+    padding: 20px;
+  }
+  
+  .login-form h2 {
+    font-size: 20px;
+    color: #424242;
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    margin: 16px;
+  }
+  
+  .form-field label {
+    display: block;
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .form-field input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.4);
+  }
+  
+  .login-button {
+    width: 100%;
+    background-color: #ff9800;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #fb8c00;
+  }
+  
+  .login-links {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .login-links a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 8px;
+  }
+  
+  .login-links a:hover {
+    text-decoration: underline;
+  }
+  
