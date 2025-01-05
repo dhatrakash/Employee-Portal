@@ -1,0 +1,118 @@
+/* RegistrationPage.css */
+
+/* General container styling */
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Card styling */
+  .registration-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Header section with gradient background */
+  .registration-header {
+    background: linear-gradient(to right, #ff9800, #fb8c00);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .registration-header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .registration-header p {
+    color: #ffe0b2;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  /* Form section */
+  .registration-form {
+    padding: 20px;
+  }
+  
+  .registration-form h2 {
+    font-size: 20px;
+    color: #424242;
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    margin: 16px 0;
+  }
+  
+  .form-field label {
+    display: block;
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .form-field input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.4);
+  }
+  
+  .registration-button {
+    width: 100%;
+    background-color: #ff9800;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .registration-button:hover {
+    background-color: #fb8c00;
+  }
+  
+  .registration-links {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .registration-links a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 8px;
+  }
+  
+  .registration-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .message {
+    margin-top: 10px;
+    color: #f44336; /* Error message color */
+    font-size: 14px;
+    text-align: center;
+  }
+  

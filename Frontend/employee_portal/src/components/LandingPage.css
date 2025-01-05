@@ -1,0 +1,119 @@
+/* LandingPage.css */
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #424242;
+    font-family: Arial, sans-serif;
+  }
+  
+  .landing-header {
+    background: linear-gradient(to right, #ff9800, #fb8c00);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .landing-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .landing-header p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-button {
+    text-decoration: none;
+    color: white;
+    background-color: #ff9800;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-button:hover {
+    background-color: #fb8c00;
+  }
+  
+  .logout {
+    background-color: #d32f2f;
+  }
+  
+  .logout:hover {
+    background-color: #b71c1c;
+  }
+  
+  .user-greeting {
+    font-size: 1rem;
+    margin-right: 15px;
+  }
+  
+  .landing-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .portal-section {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .portal-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .portal-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .portal-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .portal-section ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  .portal-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .landing-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .landing-footer a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .landing-footer a:hover {
+    text-decoration: none;
+  }
+  

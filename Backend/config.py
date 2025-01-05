@@ -1,1 +1,1 @@
-DATABASE_URL = "sqlite:///./sqlite.db"  # SQLite database URL
+DATABASE_URL = "sqlite+aiosqlite:///./Emplify.db"

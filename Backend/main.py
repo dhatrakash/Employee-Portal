@@ -1,12 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import auth
-from model import database
+from model.database import init_db
+import uvicorn
 
 app = FastAPI(title="Employee Portal Backend")
-
-# Initialize the database tables
-database.Base.metadata.create_all(bind=database.engine)
 
 # Include authentication routes
 app.include_router(auth.router)
@@ -20,6 +18,10 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the Employee Portal API"}
+# Initialize the database on startup
+@app.on_event("startup")
+async def startup_event():
+    await init_db()
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
